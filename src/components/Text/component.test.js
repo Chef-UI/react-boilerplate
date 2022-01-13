@@ -5,13 +5,12 @@ import '@testing-library/jest-dom';
 
 import Text from './component';
 
-let wrapper = props => <Text {...props} />;
+let wrapper = (props) => <Text {...props} />;
 
 describe('Text', () => {
+  it('should render', () => {
+    const { getByText } = render(wrapper());
 
-	it('should render', () => {
-		const { getByText } = render(wrapper());
-
-		expect(getByText('Template component').textContent).toBeTruthy();
-	});
+    expect(getByText('Template component').textContent).toBeTruthy();
+  });
 });

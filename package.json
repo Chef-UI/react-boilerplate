@@ -7,6 +7,7 @@
     "run:dev": "webpack-dev-server --host 0.0.0.0 --port 9090 --mode development --open",
     "docker:start": "docker-compose up -d",
     "docker:stop": "docker-compose stop",
+    "lint": "prettier --write '**/*.js' '**/*.jsx' '**/*.scss' '**/*.html'",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": "https://github.com/Chef-UI/react-boilerplate.git",
@@ -24,6 +25,7 @@
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.5.1",
     "sass": "^1.48.0",
     "sass-loader": "10.1.1",
     "style-loader": "3.3.1",

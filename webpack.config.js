@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/',
   },
   resolve: { extensions: ['.js', '.jsx'] },
   devServer: {
@@ -21,16 +21,12 @@ module.exports = {
       },
       {
         test: /\.(css|scss)?$/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' },
-          { loader: 'sass-loader' },
-        ]
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
       },
       {
         test: /\.(png|svg|jpg|gif|jpeg)$/,
-        use: 'file-loader'
-      }
-    ]
-  }
-}
+        use: 'file-loader',
+      },
+    ],
+  },
+};
