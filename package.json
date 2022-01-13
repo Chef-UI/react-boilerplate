@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Boilerplate to start React project quickly.",
   "main": "index.js",
+  "scripts": {
+    "run:dev": "webpack-dev-server --host 0.0.0.0 --port 9090 --mode development --open"
+  },
   "repository": "https://github.com/Chef-UI/react-boilerplate.git",
   "author": "cl4pper <cl4pper@gmail.com>",
   "license": "MIT",
