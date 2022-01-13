@@ -1,7 +1,7 @@
 import React from 'react';
 
 // STYLE
-import './app.css';
+import './app.scss';
 
 const App = () => {
   return (
