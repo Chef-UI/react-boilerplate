@@ -4,7 +4,10 @@
   "description": "Boilerplate to start React project quickly.",
   "main": "index.js",
   "scripts": {
-    "run:dev": "webpack-dev-server --host 0.0.0.0 --port 9090 --mode development --open"
+    "run:dev": "webpack-dev-server --host 0.0.0.0 --port 9090 --mode development --open",
+    "docker:start": "docker-compose up -d",
+    "docker:stop": "docker-compose stop",
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": "https://github.com/Chef-UI/react-boilerplate.git",
   "author": "cl4pper <cl4pper@gmail.com>",
