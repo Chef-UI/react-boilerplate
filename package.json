@@ -7,6 +7,7 @@
     "run:dev": "webpack-dev-server --host 0.0.0.0 --port 9090 --mode development --open",
     "docker:start": "docker-compose up -d",
     "docker:stop": "docker-compose stop",
+    "ngrok": "ngrok http 9090 -host-header='localhost:9090'",
     "lint": "prettier --write '**/*.js' '**/*.jsx' '**/*.scss' '**/*.html'",
     "build": "webpack --config webpack.config.js --mode production"
   },
